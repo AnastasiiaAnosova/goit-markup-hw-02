@@ -1,0 +1,183 @@
+:root {
+    --primary-brand: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --body-text: #434455;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+
+}
+body {
+    font-family: 'Roboto',sans-serif;
+    color: var(--dark);
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+.header-nav {
+    background-color: #FFFFFF;
+}
+.logo {
+    /* width: 71px;
+    height: 24px; */
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+.logo-web {
+    color: var(--primary-brand);
+}
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark);
+}
+.contact-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text);
+}
+.menu-link:active {
+    color: var(--pressed-state);
+}
+.contact-link:active {
+    color: var(--pressed-state);
+}
+.hero {
+    background-color: var(--dark);
+}
+.main-text {
+    
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.main-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    cursor: pointer;
+    background: var(--primary-brand);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.main-btn:hover,
+.main-btn:focus {
+    background: var(--pressed-state);
+}
+.hidden-title {
+    /* як краще приховати? */
+    color:rgba(0, 0, 0, 0);
+}
+.about-company-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.about-company-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text);
+}
+.specialization {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.about-team {
+    background: var(--light);
+}
+.team {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+.employee {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.employee-spesialization {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+       letter-spacing: 0.02em;
+    color: var(--body-text);
+}
+.footer {
+    background: var(--dark);
+}
+.logo-footer {
+    color: var(--light);
+}
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+}
+.btn-filter {
+    width: 116px;
+    height: 48px;
+    background: var(--light);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand);
+    cursor: pointer;
+}
+.btn-filter:hover,
+.btn-filter:focus {
+    color: #FFFFFF;
+    background: var(--pressed-state);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.filter-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--dark);
+}
+.filter-text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--body-text);
+}
