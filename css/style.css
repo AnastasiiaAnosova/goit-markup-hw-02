@@ -21,14 +21,10 @@ body {
     background-color: #FFFFFF;
 }
 .logo {
-    /* width: 71px;
-    height: 24px; */
-    font-family: 'Raleway';
+    font-family: inherit;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--dark);
@@ -50,9 +46,13 @@ body {
     letter-spacing: 0.02em;
     color: var(--body-text);
 }
+.menu-link:hover,
+.menu-link:focus,
 .menu-link:active {
     color: var(--pressed-state);
 }
+.contact-link:hover,
+.contact-link:focus,
 .contact-link:active {
     color: var(--pressed-state);
 }
@@ -60,7 +60,6 @@ body {
     background-color: var(--dark);
 }
 .main-text {
-    
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -68,11 +67,10 @@ body {
     color: #FFFFFF;
 }
 .main-btn {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     cursor: pointer;
@@ -84,9 +82,17 @@ body {
 .main-btn:focus {
     background: var(--pressed-state);
 }
-.hidden-title {
-    /* як краще приховати? */
-    color:rgba(0, 0, 0, 0);
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 .about-company-title {
     font-weight: 500;
@@ -95,7 +101,6 @@ body {
     letter-spacing: 0.02em;
 }
 .about-company-description {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -118,6 +123,9 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
+.team-list-item {
+    background-color: #FFFFFF;
+}
 .employee {
     font-weight: 500;
     font-size: 20px;
@@ -129,7 +137,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
-       letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
     color: var(--body-text);
 }
 .footer {
@@ -139,7 +147,6 @@ body {
     color: var(--light);
 }
 .footer-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -151,11 +158,10 @@ body {
     background: var(--light);
     border: 1px solid var(--accent);
     border-radius: 4px;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--primary-brand);
@@ -169,15 +175,15 @@ body {
     border-radius: 4px;
 }
 .filter-title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: var(--dark);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark);
 }
 .filter-text {
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: var(--body-text);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text);
 }
